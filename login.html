@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AVoke - Login</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      height: 100vh;
+
+      background-color: #111;
+
+      font-family: Arial, sans-serif;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      color: white;
+
+    }
+
+
+
+    .login-container {
+
+      background-color: #1c1c1c;
+
+      padding: 40px;
+
+      border-radius: 10px;
+
+      width: 100%;
+
+      max-width: 400px;
+
+      text-align: center;
+
+    }
+
+
+
+    .login-container img {
+
+      height: 60px;
+
+      margin-bottom: 15px;
+
+    }
+
+
+
+    .login-container h1 {
+
+      color: #00d084;
+
+      margin-bottom: 20px;
+
+      font-size: 26px;
+
+    }
+
+
+
+    input, button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin-top: 10px;
+
+      border: none;
+
+      border-radius: 5px;
+
+      font-size: 16px;
+
+    }
+
+
+
+    input {
+
+      background-color: #333;
+
+      color: #fff;
+
+    }
+
+
+
+    button {
+
+      background-color: #00d084;
+
+      color: #000;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+    }
+
+
+
+    .signup-link {
+
+      margin-top: 15px;
+
+      font-size: 14px;
+
+    }
+
+
+
+    .signup-link a {
+
+      color:  #00d084;
+
+      text-decoration: none;
+
+    }
+
+
+
+    .signup-link a:hover {
+
+      text-decoration: underline;
+
+    }
+
+  </style>
+
+</head>
+
+<body class="dark-theme">
+
+  <div class="login-container">
+
+    <img src="https://media.istockphoto.com/id/1286594824/vector/n-letter-and-av-letter-vector-icon-illustration.jpg?s=612x612&w=0&k=20&c=jWApoOO1XFOqzUWOlPYgJ8H7VVoPsQr4c6foMqEmLpA=" 
+
+         alt="Avoke Logo" />
+
+    <h1>AVoke Trading</h1>
+
+    <form id="loginForm">
+
+      <input type="text" id="username" placeholder="Username" required />
+
+      <input type="password" id="password" placeholder="Password" required />
+
+      <button type="submit">Login</button>
+
+    </form>
+
+    <div class="signup-link">
+
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

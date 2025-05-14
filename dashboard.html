@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVoke - Trading Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #373535;
+      color: #fff
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 50px;
+      border-radius: 5px;
+    }
+
+    .logo-title h1 {
+      font-size: 28px;
+      color: #00d084;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 5px;
+      background-color: #1f1f1f;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #00d084;
+      color: #000;
+    }
+
+    main section {
+      margin-top: 30px;
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h2, h3, h4 {
+      color: #00d084;
+    }
+
+    .summary, .market, .trade {
+      margin-bottom: 30px;
+    }
+
+    .summary div,
+    .market div {
+      line-height: 1.8;
+    }
+
+    form input,
+    form select,
+    form button {
+      padding: 10px;
+      margin: 10px 10px 0 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    form button {
+      background-color: #00d084;
+      color: #000;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      form input,
+      form select,
+      form button {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .logo-title {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-title">
+        <img src="https://media.istockphoto.com/id/1286594824/vector/n-letter-and-av-letter-vector-icon-illustration.jpg?s=612x612&w=0&k=20&c=jWApoOO1XFOqzUWOlPYgJ8H7VVoPsQr4c6foMqEmLpA=" alt="AVoke Logo" />
+        <h1>AVoke Trading</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+          <li><a href="market.html">Market</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="summary">
+        <h2>Account Overview - JohnDoe123</h2>
+        <div>
+          <strong>Balance:</strong> $12,350.00<br />
+          <strong>Holdings Value:</strong> $8,720.00<br />
+          <strong>Total Portfolio Value:</strong> $21,070.00<br />
+          <strong>Last Login:</strong> 2025-05-13 08:30 AM
+        </div>
+      </section>
+
+      <section class="market">
+        <h3>Live Market Overview</h3>
+        <div>
+          AAPL: $145.32 | GOOG: $2735.55 | TSLA: $652.10 | AMZN: $3201.80 | MSFT: $310.12
+        </div>
+      </section>
+
+      <section class="trade">
+        <h4>Trade Stocks</h4>
+        <form>
+          <input type="text" placeholder="Stock Symbol (e.g. AAPL)" required />
+          <input type="number" placeholder="Quantity" required />
+          <select>
+            <option value="buy">Buy</option>
+            <option value="sell">Sell</option>
+          </select>
+          <button type="submit">Execute Trade</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 AVoke Trading Platform | All rights reserved | Version 1.2.0
+    </footer>
+  </div>
+</body>
+
+</html>
